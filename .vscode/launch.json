@@ -16,10 +16,10 @@
                     // want to debug one file regardless of the active file in
                     // the editor.
                     "--bin=${fileBasenameNoExtension}",
-                    "--package=advent_of_code"
+                    "--package=advent_of_code",
                 ],
             },
-            "args": [],
+            "args": ["--nocapture"],
             "cwd": "${workspaceFolder}"
         },
         {
@@ -36,7 +36,8 @@
                     "--package=advent_of_code"
                 ],
             },
-            "cwd": "${workspaceFolder}"
+            "cwd": "${workspaceFolder}",
+            "args": ["--nocapture"],
         },
         {
             "type": "lldb",
@@ -55,7 +56,7 @@
                     "kind": "lib"
                 }
             },
-            "args": [],
+            "args": ["--nocapture"],
             "cwd": "${workspaceFolder}"
         }
     ]
